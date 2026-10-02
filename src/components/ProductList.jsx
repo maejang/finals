@@ -39,7 +39,6 @@ export default function ProductList({
 
   return (
     <div className="space-y-6">
-      {/* Dark Filter Bar */}
       <div className="bg-[#171122] p-4 rounded-xl border border-[#2B233C] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
         <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
           <span className="text-rose-500 font-black tracking-wider flex items-center gap-1.5">
@@ -78,7 +77,6 @@ export default function ProductList({
         </div>
       </div>
 
-      {/* Grid Display (Displaying Paginated 6 Products) */}
       {paginatedProducts.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {paginatedProducts.map((product) => {
@@ -104,7 +102,6 @@ export default function ProductList({
         </div>
       )}
 
-      {/* Pagination component */}
       <Pagination
         currentPage={currentPage}
         totalPages={totalPages}

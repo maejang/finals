@@ -12,7 +12,6 @@ export default function ProductCard({
   return (
     <div className="group bg-[#171122] rounded-2xl p-3 border border-[#2B233C] hover:border-rose-500/50 shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
       
-      {/* Image Container with Badges */}
       <div className="relative overflow-hidden rounded-xl bg-[#0E0A17] aspect-square mb-3 flex items-center justify-center p-2">
         <img
           src={product.image}
@@ -21,12 +20,10 @@ export default function ProductCard({
           className="w-full h-full object-contain cursor-zoom-in group-hover:scale-105 transition-transform duration-300"
         />
         
-        {/* Grade Badge */}
         <span className="absolute top-2 left-2 text-[10px] uppercase tracking-wider font-black px-2 py-0.5 rounded bg-[#DC2626] text-white shadow-md">
           {product.grade || 'SPECIAL GRADE'}
         </span>
 
-        {/* Favorite Heart Button */}
         <button
           onClick={() => onToggleFavorite && onToggleFavorite(product.id)}
           className={`absolute top-2 right-2 p-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 transition-transform active:scale-90 ${
@@ -39,13 +36,11 @@ export default function ProductCard({
           </svg>
         </button>
 
-        {/* Character Badge */}
         <span className="absolute bottom-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded bg-[#231A34] text-rose-300 border border-purple-500/20">
           {product.character}
         </span>
       </div>
 
-      {/* Product Content */}
       <div className="flex-1 flex flex-col justify-between">
         <div>
           <h3 
@@ -59,7 +54,6 @@ export default function ProductCard({
           </p>
         </div>
 
-        {/* Price & Actions */}
         <div className="flex items-center justify-between pt-2 border-t border-[#231A34] mt-auto">
           <div className="text-sm font-black text-rose-400">
             ${product.price}

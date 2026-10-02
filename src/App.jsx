@@ -123,7 +123,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0D0B14] text-zinc-100 font-sans antialiased pb-12 relative selection:bg-rose-500 selection:text-white">
-      {/* Toast Notification with SVG */}
       {toastMessage && (
         <div className="fixed bottom-6 right-6 z-[9999] flex items-center gap-2.5 bg-[#DC2626] text-white text-xs font-bold px-5 py-3 rounded-xl shadow-2xl border border-rose-500/40 transition-all duration-300">
           <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
