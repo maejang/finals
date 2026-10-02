@@ -81,7 +81,7 @@ export default function Navbar({
             )}
           </button>
 
-          <button
+          {/* <button
             onClick={() => setCurrentView('cart')}
             className={`relative p-2 transition-colors ${
               currentView === 'cart' ? 'text-pink-500' : 'text-zinc-300 hover:text-pink-400'
@@ -98,7 +98,7 @@ export default function Navbar({
                 {totalItemsInCart}
               </span>
             )}
-          </button>
+          </button> */}
 
           <button
             onClick={() => setCurrentView('cart')}
